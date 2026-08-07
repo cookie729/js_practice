@@ -1,0 +1,90 @@
+/* スライドメニュー */
+.hamburger {
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--brown);
+  border-radius: 10px;
+}
+.btn-menu {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 4;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--brown);
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+/* 閉じる */
+#menu-close {
+  border: 1px solid var(--light-green);
+}
+
+#menu-close::before,
+#menu-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 3px;
+  background-color: var(--light-green);
+  border-radius: 10px;
+}
+
+#menu-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#menu-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* パネル */
+#menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  padding: 8rem 2rem 2rem;
+  width: max(32vw, 20rem);
+  height: 100vh;
+  background-color: var(--brown);
+  box-shadow: 0 0 2rem var(--brown);
+  font-family: var(--oswald-font);
+  translate: 100vw 0;
+}
+.menu-list {
+  list-style: none;
+}
+.menu-list li {
+  margin: 1.5rem 0;
+  opacity: 0;
+}
+.menu-list a {
+  color: var(--light-green);
+  text-decoration: none;
+  font-size: 2rem;
+}
+@media (min-width: 800px) {
+  /* SLIDE MENU */
+
+  .btn-menu:hover {
+    background-color: var(--light-green);
+  }
+  #menu-close:hover svg {
+    fill: var(--brown);
+  }
+  .menu-list a:hover {
+    transition: 0.4s;
+    color: var(--green);
+  }
+}
