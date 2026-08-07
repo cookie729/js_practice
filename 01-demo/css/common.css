@@ -1,0 +1,33 @@
+/*
+COMMON
+================================================ */
+p {
+    line-height: 1.7;
+}
+img {
+    max-width: 100%;
+}
+.title {
+    font-family: var(--oswald-font);
+    font-size: min(10vw, 4rem);
+    margin-bottom: 2rem;
+}
+.btn {
+    color: var(--white);
+    background: var(--brown);
+    border: 1px solid var(--brown);
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    margin: 2rem 0;
+    transition: .4s;
+}
+@media(min-width: 800px){
+/* COMMON */
+    .title {
+        margin-bottom: 3rem;
+    }
+    .btn:hover {
+        color: var(--brown);
+        background: var(--light-green);
+    }}

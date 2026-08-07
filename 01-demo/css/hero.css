@@ -1,0 +1,37 @@
+/*
+HERO
+================================================ */
+.hero {
+    height: 100vh;
+    position: relative;
+}
+.hero::after {
+    content: '';
+    width: 50%;
+    height: 100vh;
+    background: url('../images/bg-hero.jpg') no-repeat center / cover;
+    position: absolute;
+    inset: 0;
+}
+.hero .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 2;
+    width: 100%;
+    font-size: max(12vw, 3rem);
+    line-height: 1.2;
+}
+@media(min-width: 800px){
+/* SLIDE MENU */
+    .btn-menu:hover {
+        background-color: var(--light-green);
+    }
+    #menu-close:hover svg {
+        fill: var(--brown);
+    }
+    .menu-list a:hover {
+        transition: .4s;
+        color: var(--green);
+    }}

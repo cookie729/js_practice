@@ -1,0 +1,8 @@
+/*
+GENERAL STYLING
+================================================ */
+body {
+    color: var(--brown);
+    background: url('../images/bg-shadow.jpg') no-repeat right bottom / cover fixed;
+    text-align: center;
+}

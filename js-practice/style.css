@@ -6,6 +6,15 @@ body {
   text-align: center;
   padding-top: 50px;
 }
+#loading{
+  background-color: rgba(238, 221, 136, 1);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items:center;
+  z-index: 999;
+}
 
 #rotate {
   font-size: 40px;
