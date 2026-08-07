@@ -1,6 +1,12 @@
+html {
+  overflow-anchor: none;
+}
+
 body {
   text-align: center;
+  padding-top: 50px;
 }
+
 #rotate {
   font-size: 40px;
   margin-top: 50px;
@@ -33,10 +39,30 @@ body {
   color: #fff;
 }
 
-#fuyo{
+#fuyo {
   background-color: #0bd;
   color: #fff;
   display: inline-block;
   padding: 6rem 3rem;
   border-radius: 50%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1020px;
+  gap: 30px;
+  margin: auto;
+  padding: 30px;
+}
+.img-item {
+  width: 100%;
+  opacity: 0;
+  object-fit: cover;
+  aspect-ratio: 3/3;
+  /* filter: blur(6px); */
+}
+#sea{
+  margin-top: 50vh;
+  max-width: 80%;
+  margin-inline: 1rem;
 }
