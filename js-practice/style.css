@@ -75,3 +75,6 @@ body {
   max-width: 80%;
   margin-inline: 1rem;
 }
+.fadein{
+  opacity: 0;
+}

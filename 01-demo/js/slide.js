@@ -28,7 +28,7 @@ menuOpen.addEventListener("click", () => {
         translate: ["2rem", 0],
       },
       {
-        duration: 2000,
+        duration: 1000,
         delay: 300 * index,
         easing: "ease",
         fill: "forwards",
